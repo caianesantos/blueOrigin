@@ -1,0 +1,257 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+}
+
+main{
+    height: 3460px;
+    background-color: #202020;
+}
+
+header{
+    height: 100px;
+    flex-shrink: 0;
+    background-color: #03D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#logo{
+    width: 210px;
+    height: 53px;
+    flex-shrink: 0;
+}
+
+header nav.main ul {
+    display: flex;         /* <-- Isto é Flexbox */
+    align-items: center;
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr); */
+    flex-direction: row;   /* <-- Isto é Flexbox */
+    gap: 70px;            
+    
+    list-style: none;
+    padding-left: 0;       /* Remove o preenchimento padrão da lista */
+    margin: 0;             /* Remove a margem padrão da lista */
+}
+
+nav.main ul li a{
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase
+}
+
+header nav.main ul li a:hover {
+    border-bottom: 1px solid #FFF;
+}
+
+button#buttons{
+    width: 180px;
+    height: 40px;
+    flex-shrink: 0;
+    background-color: #D9D9D9;
+    font-weight: bold;
+    color: #0033DD;
+    border: none;
+    font-size: 16px;
+}
+
+button{
+    font-size: 16px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 35px; /* Este é o espaço entre o menu "SHOP" e o botão "COMPRE" */
+}
+
+/* Este CSS novo vai alinhar seus dois botões um ao lado do outro */
+nav.botoes {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaço entre o botão "COMPRE" e o ícone do menu */
+}
+
+button#menu {
+    margin-right: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0; 
+    align-items: center;
+}
+
+/* BANNER */
+
+.banner{
+    display: flex;
+    position: relative;
+    overflow: hidden; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+    background-image: url('/assets/bg_banner 1.png'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+#title-banner{
+    margin-top: 130px;
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.elements_banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button#banner{
+    width: 180px;
+    height: 40px;
+    flex-shrink: 0;
+    color: #D9D9D9;
+    font-weight: bold;
+    background-color: #0033DD;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 150px;
+}
+
+/* SESSÃO CONTEÚDO */
+
+.terra{
+    display: flex;
+    align-items: center;
+    color: #FFF;
+}
+
+#coluna-texto1{
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+    margin-top: 40px;
+    color: #FFF;
+    flex-direction: column;
+}
+#texto1{
+    margin-top: 15px;
+    margin-left: 40px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+#texto2{
+    margin-top: 39px;
+    margin-left: 40px;
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#paragrafo1{
+    margin-top: 10px;
+    margin-left: 40px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.link-destaque{
+    margin-top: 17px;
+    margin-left: 58px;
+    color: #FFF;
+}
+
+span#1{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+#imagem1{
+    margin-right: 16px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    flex: 1;
+
+}
+
+.assento{
+    display: flex;
+    align-items: center;
+    color: #FFF;
+}
+
+#imagem2{
+    margin-left: 16px;
+}
+
+#coluna-texto2{
+    margin-right: 62px;
+    margin-left: 23px;
+    color: #FFF;
+    flex-direction: column;
+}
+
+#texto3{
+    margin-top: 36px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 39px;
+}
+
+#texto4{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#paragrafo{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
