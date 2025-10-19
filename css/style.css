@@ -390,6 +390,7 @@ footer{
 
     display: flex;
     justify-content: center;
+    gap: 2rem;
     align-items: center;
 
 }
@@ -397,6 +398,7 @@ footer{
     width: 100px;
     height: 40px;
 }
+
 #pena img{
     width: 100%;
     max-width: 400px;
@@ -446,6 +448,15 @@ footer{
     font-weight: 600;
 }
 
+#info ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#info ul li{
+    list-style: none;
+}
 
 .footer-pena{
     width: 360px;
@@ -456,8 +467,9 @@ footer{
     font-weight: 400;
     line-height: normal;
     align-items: center;
-
+    text-decoration: none;
 }
+
 form{
     background: rgba(255, 255, 255, 0.50);
     box-sizing: border-box;
